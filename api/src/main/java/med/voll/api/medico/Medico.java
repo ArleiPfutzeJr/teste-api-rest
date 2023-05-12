@@ -30,9 +30,9 @@ public class Medico {
 
     public Medico(DadosCadastroMedico dados) {
 
-        this.nome = nome;
-        this.email = email;
-        this.crm = crm;
+        this.nome = dados.nome();
+        this.email = dados.email();
+        this.crm = dados.crm();
         this.especialidade = dados.especialidade();
         this.endereco = new Endereco(dados.endereco());
 
